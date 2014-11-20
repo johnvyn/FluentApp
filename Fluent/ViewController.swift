@@ -20,6 +20,11 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func connectButtonTouched(sender: UIButton) {
+        let manager = AFHTTPRequestOperationManager();
+        
+    }
+    
     @IBAction func randomizeColorsButtonTouched(sender: UIButton) {
     }
 
