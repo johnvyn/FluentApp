@@ -22,6 +22,25 @@ class ViewController: UIViewController {
 
     @IBAction func connectButtonTouched(sender: UIButton) {
         let manager = AFHTTPRequestOperationManager();
+//        manager.GET("http://sporthub.alexanderjuda.pl/users.json",
+//            parameters: nil,
+//            success: { (requestOperation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
+//                
+//            }
+//        AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+//        [manager GET:@"http://example.com/resources.json" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+//            NSLog(@"JSON: %@", responseObject);
+//        } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
+//            NSLog(@"Error: %@", error);
+//        }];
+        manager.GET("http://1b510586.ngrok.com/",
+            parameters: nil,
+            success: { (operation: AFHTTPRequestOperation!, response: AnyObject!) -> Void in
+                NSLog("Success!")
+            },
+            failure: { (operation: AFHTTPRequestOperation!, error: NSError!) -> Void in
+                NSLog("Failure!")
+            })
         
     }
     

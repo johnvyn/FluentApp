@@ -10,5 +10,6 @@
 #define Fluent_bridge_h
 
 #import "AFNetworking/AFNetworking.h"
+#import "HueSDK_iOS/HueSDK.h"
 
 #endif
